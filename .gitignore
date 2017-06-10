@@ -1,0 +1,29 @@
+package cgpa.calculator;
+//this indroduces the use of a keyboard
+import java.util.Scanner;
+
+
+public class cgpaCalculator {
+    String name;
+  
+
+    public static void main(String[] args) {
+        //this allows the program view users input
+         Scanner in =new Scanner(System.in);
+         
+ //this displays the users input on the next line
+      System.out.println("FIRST YEAR GP =");
+      
+       int yearOne =in.nextInt();
+         System.out.println("SECOND  YEAR GP =");
+         int yearTwo =in.nextInt ();
+         //while this displays  the users input on the same line
+           System.out.print("THIRD YEAR GP =");
+           int yearThree =in.nextInt();
+           int sum = yearOne + yearTwo + yearThree;
+             System.out.print("TOTAL CGPA =" + sum +"CONGRATS");
+             
+             
+    }
+    
+}
